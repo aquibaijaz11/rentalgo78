@@ -1,0 +1,328 @@
+*{
+    margin: 0%;
+    padding: 0%;
+     
+}
+
+
+
+
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.main-nav ul {
+	margin: 1em 0 .5em;
+    text-align: center;
+    
+
+    
+    
+    
+    
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color: red;
+    border: 2px solid black;
+  
+    text-transform: uppercase;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .mainintro{
+border-top: 3px solid black;
+
+  }
+  
+  .container1{
+    width:80%;
+    margin: 0 auto;
+  }
+  
+  .details{
+    text-align: center;
+  }
+  
+  .details h2{
+    color:#243238;
+    font-size:50px;
+    margin: 0;
+  }
+  
+  .main-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .box{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+  
+  }
+  .box > * {
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+  
+  .box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .box:hover::before{
+    width: 95%;
+    height: 95%;
+    transition: all ease .50s;
+  }
+  
+  .box .icon{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .box .icon .fa{
+    border-radius: 5px;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+  }
+  
+  hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+    width: 70%;
+    border: 1px solid rgba(255,255,255, 0.1);
+  
+  }
+  
+  .box a{
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    background-color:#D50000 ;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 600 ;
+  }
+  .box a:hover{
+    background-color:#243238 ;
+  }
+  
+  .box .white-border{
+    border: 1px solid #ffffff;
+  }
+  
+  
+  .box-grey{
+    background-color:#404044 ;
+  }
+  
+  .box-red{
+    background-color:#D50000;
+  }
+
+.mainintrohead{
+ color: red;
+ text-align: center;
+ border-bottom: 3px solid black;
+
+}
+
+
+
+
+  
+
+/* STYLES SPECIFIC TO FOOTER  */
+
+.clearfix {
+  clear: both;
+}
+
+
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: white;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: black;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+
+
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
